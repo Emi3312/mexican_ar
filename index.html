@@ -1,0 +1,46 @@
+<html></html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-face-aframe.prod.js"></script>
+  </head>
+  <body>
+    <a-scene
+      mindar-face
+      embedded
+      vr-mode-ui="enabled: false"
+      device-orientation-permission-ui="enabled: false"
+    >
+      <a-camera active="false" position="0 0 0"></a-camera>
+
+      
+      <a-entity mindar-face-target="anchorIndex: 1">
+        
+        <a-plane
+          src="mostacho.png"
+          position="-0.02 -0.1 0"
+          scale="0.8 0.4 0.1"
+          rotation="0 0 0"
+          transparent="true"
+          material="transparent: true; opacity: 1"
+        >
+        </a-plane>
+      </a-entity>
+
+      <a-entity mindar-face-target="anchorIndex: 1">
+        
+        <a-plane
+          src="nopal.png"
+          position="-0.02 0.7 0"
+          scale="0.6 0.7 0.1"
+          rotation="0 0 0"
+          transparent="true"
+          material="transparent: true; opacity: 1"
+        >
+        </a-plane>
+      </a-entity>
+
+      
+    </a-scene>
+  </body>
+</html>
